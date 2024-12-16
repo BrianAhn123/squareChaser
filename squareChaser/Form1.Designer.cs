@@ -73,36 +73,36 @@
             // 
             this.winLabel.AutoSize = true;
             this.winLabel.ForeColor = System.Drawing.Color.White;
-            this.winLabel.Location = new System.Drawing.Point(355, 72);
+            this.winLabel.Location = new System.Drawing.Point(247, 52);
             this.winLabel.Name = "winLabel";
-            this.winLabel.Size = new System.Drawing.Size(0, 16);
+            this.winLabel.Size = new System.Drawing.Size(0, 13);
             this.winLabel.TabIndex = 2;
             // 
             // restartButton
             // 
             this.restartButton.Enabled = false;
-            this.restartButton.Location = new System.Drawing.Point(342, 305);
+            this.restartButton.Location = new System.Drawing.Point(250, 243);
             this.restartButton.Name = "restartButton";
             this.restartButton.Size = new System.Drawing.Size(75, 23);
             this.restartButton.TabIndex = 3;
-            this.restartButton.Text = "AGAIN?";
+            this.restartButton.Text = "Again?";
             this.restartButton.UseVisualStyleBackColor = true;
             this.restartButton.Visible = false;
-            this.restartButton.Click += new System.EventHandler(this.restartButton_Click_1);
+            this.restartButton.Click += new System.EventHandler(this.restartButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(762, 547);
+            this.ClientSize = new System.Drawing.Size(572, 444);
             this.Controls.Add(this.restartButton);
             this.Controls.Add(this.winLabel);
             this.Controls.Add(this.p2pointsLabel);
             this.Controls.Add(this.p1pointsLabel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
