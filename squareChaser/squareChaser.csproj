@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_person_cheering-Jett_Rifkin-1851518140.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mirror Shattering-SoundBible.com-1752328245.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow-SoundBible.com-1760405458.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power_Up_Ray-Mike_Koenig-800933783.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

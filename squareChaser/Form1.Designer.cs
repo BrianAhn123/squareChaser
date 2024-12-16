@@ -33,6 +33,8 @@
             this.stopWatch = new System.Windows.Forms.Timer(this.components);
             this.p1pointsLabel = new System.Windows.Forms.Label();
             this.p2pointsLabel = new System.Windows.Forms.Label();
+            this.winLabel = new System.Windows.Forms.Label();
+            this.restartButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // gameTimer
@@ -43,7 +45,7 @@
             // 
             // stopWatch
             // 
-            this.stopWatch.Interval = 20;
+            this.stopWatch.Interval = 400;
             // 
             // p1pointsLabel
             // 
@@ -65,12 +67,35 @@
             this.p2pointsLabel.TabIndex = 1;
             this.p2pointsLabel.Text = "0";
             // 
+            // winLabel
+            // 
+            this.winLabel.AutoSize = true;
+            this.winLabel.ForeColor = System.Drawing.Color.White;
+            this.winLabel.Location = new System.Drawing.Point(355, 72);
+            this.winLabel.Name = "winLabel";
+            this.winLabel.Size = new System.Drawing.Size(0, 16);
+            this.winLabel.TabIndex = 2;
+            // 
+            // restartButton
+            // 
+            this.restartButton.Enabled = false;
+            this.restartButton.Location = new System.Drawing.Point(342, 305);
+            this.restartButton.Name = "restartButton";
+            this.restartButton.Size = new System.Drawing.Size(75, 23);
+            this.restartButton.TabIndex = 3;
+            this.restartButton.Text = "AGAIN?";
+            this.restartButton.UseVisualStyleBackColor = true;
+            this.restartButton.Visible = false;
+            this.restartButton.Click += new System.EventHandler(this.restartButton_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(762, 547);
+            this.Controls.Add(this.restartButton);
+            this.Controls.Add(this.winLabel);
             this.Controls.Add(this.p2pointsLabel);
             this.Controls.Add(this.p1pointsLabel);
             this.DoubleBuffered = true;
@@ -91,6 +116,8 @@
         private System.Windows.Forms.Timer stopWatch;
         private System.Windows.Forms.Label p1pointsLabel;
         private System.Windows.Forms.Label p2pointsLabel;
+        private System.Windows.Forms.Label winLabel;
+        private System.Windows.Forms.Button restartButton;
     }
 }
 
