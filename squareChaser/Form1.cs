@@ -148,6 +148,8 @@ namespace squareChaser
             Collision();
             pause--;
 
+
+            Refresh();
         }
 
 
