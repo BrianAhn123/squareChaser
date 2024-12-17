@@ -51,9 +51,10 @@
             // 
             this.p1pointsLabel.AutoSize = true;
             this.p1pointsLabel.ForeColor = System.Drawing.Color.White;
-            this.p1pointsLabel.Location = new System.Drawing.Point(282, 9);
+            this.p1pointsLabel.Location = new System.Drawing.Point(212, 7);
+            this.p1pointsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.p1pointsLabel.Name = "p1pointsLabel";
-            this.p1pointsLabel.Size = new System.Drawing.Size(14, 16);
+            this.p1pointsLabel.Size = new System.Drawing.Size(13, 13);
             this.p1pointsLabel.TabIndex = 0;
             this.p1pointsLabel.Text = "0";
             // 
@@ -61,9 +62,10 @@
             // 
             this.p2pointsLabel.AutoSize = true;
             this.p2pointsLabel.ForeColor = System.Drawing.Color.White;
-            this.p2pointsLabel.Location = new System.Drawing.Point(469, 9);
+            this.p2pointsLabel.Location = new System.Drawing.Point(352, 7);
+            this.p2pointsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.p2pointsLabel.Name = "p2pointsLabel";
-            this.p2pointsLabel.Size = new System.Drawing.Size(14, 16);
+            this.p2pointsLabel.Size = new System.Drawing.Size(13, 13);
             this.p2pointsLabel.TabIndex = 1;
             this.p2pointsLabel.Text = "0";
             // 
@@ -90,7 +92,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(762, 547);
@@ -100,8 +102,10 @@
             this.Controls.Add(this.p1pointsLabel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
